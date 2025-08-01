@@ -1,14 +1,17 @@
 import requests
 import json
 from bs4 import BeautifulSoup as BS
-from Univers import university, Ind
 from CodesName import cods
+
+with open('./myproject/json/Univers.json', 'r', encoding='utf-8') as f:
+    university = json.load(f)
 
 def insert_data():
     """
     Выдает словарь data = { Номер ЕГПУ : [(Приоритет, [Название, Уникальный ID])]} 
     ЗАПУСКАТЬ ДЛЯ ОБНОВЛЕНИЯ ДАННЫХ ВСЕХ СПИСКОВ
     """
+    Ind = university['Ind']
     data = {}
     k = 1
     for spec in cods:
@@ -37,7 +40,7 @@ def insert_data():
     for el in data:
         data[el].sort()
 
-    with open('data.json', 'w', encoding='utf-8') as f:
+    with open('./myproject/json/data.json', 'w', encoding='utf-8') as f:
         print('Файл с инфой готов')
         json.dump(data, f)
 
