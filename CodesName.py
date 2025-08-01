@@ -1,7 +1,9 @@
 import requests
+import json
 from bs4 import BeautifulSoup as BS
-from Univers import university
 
+with open('./myproject/json//Univers.json', 'r', encoding='utf-8') as f:
+    university = json.load(f)
 
 def get_code_name():
     """
