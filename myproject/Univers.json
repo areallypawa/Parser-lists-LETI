@@ -1,0 +1,24 @@
+{
+  "Ind": [
+    "4805505",
+    "3835101"
+  ],
+  "Ind_Cort": {
+    "4805505": "20 21",
+    "3835101": "11 10 7 13 23"
+  },
+
+
+  
+  "leti": {
+    "count": "#header > .row > div",
+    "do-name": "#header > h2",
+    "h1": "#list",
+    "h2": ".table-responsive",
+    "h3": ".table",
+    "h4": "tbody",
+    "root": "https://lists.priem.etu.ru/public/page?id=01978f0d-7806-7c11-9a72-e90602d1e99e",
+    "BASE": "https://lists.priem.etu.ru/public/list?"
+  }
+  
+}
